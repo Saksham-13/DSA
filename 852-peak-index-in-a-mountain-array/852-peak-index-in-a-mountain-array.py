@@ -1,13 +1,5 @@
-from operator import indexOf
-
-
-class Solution(object):
-    def peakIndexInMountainArray(self, arr):
-        """
-        :type arr: List[int]
-        :rtype: int
-        """
-    
+class Solution:
+    def peakIndexInMountainArray(self, arr: List[int]) -> int:
         start = 0
         end = len(arr)-1
         while(start<=end):
@@ -19,4 +11,3 @@ class Solution(object):
                 start = mid +1
             else:
                 end = mid
-            
